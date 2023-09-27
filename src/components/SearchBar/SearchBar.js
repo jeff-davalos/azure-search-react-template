@@ -71,7 +71,20 @@ export default function SearchBar(props) {
 
     return (
         <div >
-            <div className="input-group" onKeyDown={e => onEnterButton(e)}>
+            <div class="form-check form-switch form-check-inline">
+                <input class="form-check-input" type="checkbox" id="flexCheckDefault" />
+                <label class="form-check-label" for="flexCheckDefault">
+                    Client 1
+                </label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                <label class="form-check-label" for="flexCheckChecked">
+                    Client 2
+                </label>
+            </div>
+            
+            <div style={{marginBottom: '10px'}} className="input-group" onKeyDown={e => onEnterButton(e)}>
                 <div className="suggestions" >
                     <input 
                         autoComplete="off" // setting for browsers; not the app
