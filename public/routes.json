@@ -53,7 +53,8 @@
       {
         "route": "/*",
         "serve": "/",
-        "statusCode": 200
+        "statusCode": 200,
+        "allowedRoles": ["authenticated"]
       }
     ],
     "platformErrorOverrides": [
