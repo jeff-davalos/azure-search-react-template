@@ -56,6 +56,12 @@
         "statusCode": 200
       }
     ],
+    "responseOverrides": {
+        "401": {
+          "statusCode": 302,
+          "redirect": "/.auth/login/aad"
+        }
+      },
     "platformErrorOverrides": [
       {
         "errorType": "Unauthenticated",
