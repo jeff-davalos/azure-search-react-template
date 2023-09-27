@@ -30,10 +30,12 @@
         "statusCode": 301
       },
       { 
-        "route": "/search" 
+        "route": "/search",
+        "allowedRoles": ["authenticated"]
       },
       { 
-        "route": "/api/search" 
+        "route": "/api/search",
+        "allowedRoles": ["authenticated"]
       },
       { 
         "route": "/api/lookup" 
